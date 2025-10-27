@@ -48,12 +48,12 @@ const Header = () => {
               className="text-xl font-bold text-primary cursor-pointer"
               onClick={() => scrollToSection("hero")}
             >
-              logo
+              NOOR AMIN
             </motion.div>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-6">
-              {["Experience", "Skills", "Tech Stack", "Projects", "Blog", "Testimonials", "About Me", "Contact"].map((item) => (
+              {["Experience", "Projects" , "Skills", "Tech Stack", "About Me"].map((item) => (
                 <motion.button
                   key={item}
                   whileHover={{ scale: 1.05 }}
@@ -70,7 +70,7 @@ const Header = () => {
             <div className="flex items-center space-x-4">
               {/* Theme Switcher */}
               <div className="hidden sm:flex items-center space-x-2">
-                <span className="text-sm text-muted-foreground">Elige el tema</span>
+                
                 <div className="flex items-center space-x-1 bg-muted rounded-lg p-1">
                   {themeOptions.map((option) => {
                     const Icon = option.icon;
